@@ -1,4 +1,19 @@
-baseURL = 'http://hugo-quickstart-template.netlify.com'
-languageCode = 'en-us'
-title = 'Netlify + Hugo Quickstart'
-theme = 'netlify-basic'
+baseURL = "https://blog.writerswithoutwalls.com"
+languageCode = "en"
+title = "Writers Without Walls Blog"
+theme = "congo"
+
+[params]
+  # Your brand colors
+  mainSections = ["posts"]
+  colorScheme = "dark" # matches your main site
+
+[menu]
+  [[menu.main]]
+    name = "Blog"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    name = "Categories"
+    url = "/categories/"
+    weight = 20
