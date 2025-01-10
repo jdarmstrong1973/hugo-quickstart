@@ -1,135 +1,96 @@
-[![hugo](https://user-images.githubusercontent.com/43764894/223559747-e9d7f19d-91bf-46a9-a0cb-8d6a40d3cfa3.png)](https://ntl.fyi/3P9w1mr)
+# Congo
 
-# Hugo Quickstart Template   
+Congo is designed to be a powerful, lightweight theme for [Hugo](https://gohugo.io). It's built using Tailwind CSS with a clean and minimalist design that prioritises to your content.
 
-This is a bare-bones Hugo project that has everything you need to quickly deploy it to [Netlify](https://netlify.com). 
+🌏 [Demo site](https://jpanther.github.io/congo/)  
+📑 [Theme documentation](https://jpanther.github.io/congo/docs/)  
+🐛 [Bug reports & issues](https://github.com/jpanther/congo/issues)  
+💡 [Questions & feature requests](https://github.com/jpanther/congo/discussions)
 
-Hate reading, here's a video: https://youtu.be/t-tsRxxYdpk
+![Screenshot](https://raw.githubusercontent.com/jpanther/congo/stable/images/screenshot.png)
 
-Love reading, here's blog post: https://www.netlify.com/blog/deploy-your-hugo-app-quick/
+## Features
 
-## Table of Contents:
-
-- [Quick Setup + Deploy Option](#quick-setup--deploy-option)
-- [Regular Setup](#regular-setup)
-  - [Cloning + Install Packages](#1-cloning--install-packages)
-  - [Deploying](#2-deploying)
-- [Styling](#styling)
-  - [Notes on Styling](#notes-on-styling)
-  - [Remove Styling](#remove-styling)
-- [Hugo + Netlify Resources](#hugo--netlify-resources)
-- [Testing](#testing)
-  - [Included Default Testing](#included-default-testing)
-  - [Removing Renovate](#removing-renovate)
-  - [Removing Cypress](#removing-cypress)
-- [Want to learn more?](#want-to-learn-more)
-
-## Quick Setup + Deploy Option
-
-Click this button and it will help you create a new repo, create a new Netlify project, and deploy!
-
-[![Deploy to Netlify Button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/hugo-quickstart)
-
-## Regular Setup
-
- ### 1. Cloning + Running Locally
-
-  - Clone this repo with one of these options:
-
-    - Click the 'Use this template' button at the top of the page
-    - Or via the command line `git clone https://github.com/netlify-templates/hugo-quickstart`
-
- - Start the Hugo sever & check it out:
-
-   - `hugo server -D`
-   - go to [http://localhost:1313/](http://localhost:1313/)
-
-  > Alternatively, you can run this locally with [the Netlify CLI](https://docs.netlify.com/cli/get-started/)'s by running the `netlify dev` command for more options like receiving a live preview to share (`netlify dev --live`) and the ability to test [Netlify Functions](https://www.netlify.com/products/functions) and [redirects](https://docs.netlify.com/routing/redirects/). 
-
-  ### 2. Deploying
-  - Install the Netlify CLI globally `npm install netlify-cli -g`
-    
-  - Run `hugo`
-
-  - Then use the `netlify deploy` for a deploy preview link or `netlify deploy --prod` to deploy to production
-
-  Here are a few other ways you can deploy this template:
-    
-  - Use the Netlify CLI's create from template command `netlify sites:create-template hugo-quickstart` which will create a repo, Netlify project, and deploy it
-    
-  - If you want to utilize continuous deployment through GitHub webhooks, run the Netlify command `netlify init` to create a new project based on your repo or `netlify link` to connect your repo to an existing project
-
-## Styling
-
-We've added some modern styling to this template using Sass within an external stylesheet, this will allow you to easily remove our styling and add in your own. 
-
-If you decide that you want to keep our styling you can review our style notes below. 
-
-### Notes on Styling
-
-The variables below give you the ability to change the gradient colors of the blobs and are interpolated into the URL string of the background-img within the body. 
-
-```css
-// Controls the blob blur gradient colors within the main tag's svg
---top-right-blur-1: #2ebc92;
---top-right-blur-2: #ecbb50;
---bttm-left-blur-1: #ff3e89;
---bttm-left-blur-2: #0095cc;
-```
-
-## Remove Styling
-
-If you decide that our styling is not for you, all you'll need to do is remove the [demo-styling.css](https://github.com/netlify-templates/hugo-quickstart/blob/main/themes/netlify-basic/static/css/demo-styling.css) file. 
-
-## Hugo + Netlify Resources
-
-Here are some resources to help you on your Hugo + Netlify coding fun!
-
-- [Hugo on Netlify Integration Page](https://ntl.fyi/3P9w1mr)
-
-
-Hope this template helps :) Happy coding 👩🏻‍💻!
+- Fully responsive layout built with Tailwind CSS 3.0
+- Multiple colour schemes (or fully customise your own)
+- Dark mode (forced on/off or auto-switching with user toggle)
+- Highly customisable configuration
+- Multiple homepage layouts
+- Flexible with any content types, taxonomies and menus
+- Multilingual content support including support for RTL languages
+- Ability to link to posts on third-party websites
+- Client-side site search powered by Fuse.js
+- Diagrams and visualisations using Mermaid
+- Charts using Chart.js
+- Mathematical notation using KaTeX
+- SVG icons from FontAwesome 6
+- Automatic image resizing using Hugo Pipes
+- Heading anchors, Tables of Contents, Code copy, Buttons, Badges and more
+- HTML and Emoji support in articles 🎉
+- SEO friendly with links for sharing to social media
+- Fathom Analytics, Plausible Analytics, Umami Analytics and Google Analytics support
+- RSS feeds, Favicons and comments support
+- Advanced customisation using simple Tailwind colour definitions and styles
+- Optimised for performance and accessibility with perfect Lighthouse scores
+- Fully documented with regular updates
 
 ---
 
-## Testing
+## Documentation
 
-### Included Default Testing
+Congo has [extensive documentation](https://jpanther.github.io/congo/docs/) that covers all aspects of the theme. Be sure to [read the docs](https://jpanther.github.io/congo/docs/) to learn more about how to use the theme and its features.
 
-We’ve included some tooling that helps us maintain these templates. This template currently uses:
+---
 
-- [Renovate](https://www.mend.io/free-developer-tools/renovate/) - to regularly update our dependencies
-- [Cypress](https://www.cypress.io/) - to run tests against how the template runs in the browser
-- [Cypress Netlify Build Plugin](https://github.com/cypress-io/netlify-plugin-cypress) - to run our tests during our build process
+## Installation
 
-If your team is not interested in this tooling, you can remove them with ease!
+Congo supports several installation methods - as a Hugo Module (easiest), a git submodule, or as a completely manual install.
 
-### Removing Renovate
+Detailed instructions for each method can be found in the [Installation](https://jpanther.github.io/congo/docs/installation) docs. You should consult the documentation for the simplest setup experience. Below is a quick start guide using Hugo modules if you're already confident installing Hugo themes.
 
-In order to keep our project up-to-date with dependencies we use a tool called [Renovate](https://github.com/marketplace/renovate). If you’re not interested in this tooling, delete the `renovate.json` file and commit that onto your main branch.
+### Quick start using Hugo
 
-### Removing Cypress
+> **Note:** Ensure you have **Go** and **Hugo** installed, and that you have created a new Hugo project before proceeding.
 
-For our testing, we use [Cypress](https://www.cypress.io/) for end-to-end testing. This makes sure that we can validate that our templates are rendering and displaying as we’d expect. By default, we have Cypress not generate deploy links if our tests don’t pass. If you’d like to keep Cypress and still generate the deploy links, go into your `netlify.toml` and delete the plugin configuration lines:
+1. From your project directory, initialise Hugo Modules:
 
-```diff
-[[plugins]]
-  package = "netlify-plugin-cypress"
--  [plugins.inputs.postBuild]
--    enable = true
--
--  [plugins.inputs]
--    enable = false 
-```
+   ```shell
+   hugo mod init github.com/<username>/<repo-name>
+   ```
 
-If you’d like to remove the `netlify-plugin-cypress` build plugin entirely, you’d need to delete the entire block above instead. And then make sure sure to remove the package from the dependencies using:
+2. Create `config/_default/module.toml` and add the following:
 
-```bash
-npm uninstall -D netlify-plugin-cypress
-```
+   ```toml
+   [[imports]]
+   path = "github.com/jpanther/congo/v2"
+   ```
 
-And lastly if you’d like to remove Cypress entirely, delete the entire `cypress` folder and the `cypress.config.ts` file. Then remove the dependency using:
+3. Start your server using `hugo server` and the theme will be downloaded automatically.
 
-```bash
-npm uninstall cypress
-```
+4. In the root folder of your website, delete the `config.toml` file that was generated by Hugo. Copy the `*.toml` config files from the theme into your `config/_default/` folder.
+
+   > **Note:** Do not overwrite the `module.toml` file you created above!
+
+   You will find these theme config files in the Hugo cache directory, or [download a copy](https://github.com/jpanther/congo/tree/stable/config/_default) from GitHub.
+
+5. Follow the [Getting Started](https://jpanther.github.io/congo/docs/getting-started/) instructions to configure your website.
+
+### Installing theme updates
+
+As new releases are posted, you can update the theme using Hugo. Simply run `hugo mod get -u` from your project directory and the theme will automatically update to the latest release.
+
+Detailed [update instructions](https://jpanther.github.io/congo/docs/installation/#installing-updates) are available in the docs.
+
+---
+
+## Contributing
+
+Congo is expected to evolve over time. I intend to keep adding features and making changes as required.
+
+Feel free to get in touch with any issues or suggestions for new features you'd like to see.
+
+- 🐛 **Bug reports & issues:** Use [GitHub Issues](https://github.com/jpanther/congo/issues)
+- 💡 **Ideas for new features:** Open a discussion on [GitHub Discussions](https://github.com/jpanther/congo/discussions)
+- 🙋‍♀️ **General questions:** Head to [GitHub Discussions](https://github.com/jpanther/congo/discussions)
+
+If you're able to fix a bug or implement a new feature, I welcome PRs for this purpose. Learn more in the [contributing guidelines](https://github.com/jpanther/congo/blob/dev/CONTRIBUTING.md).
