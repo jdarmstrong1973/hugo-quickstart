@@ -4,9 +4,19 @@ title = "Writers Without Walls Blog"
 theme = "congo"
 
 [params]
-  # Your brand colors
-  mainSections = ["posts"]
-  colorScheme = "dark" # matches your main site
+  colorScheme = "dark"
+
+[params.theme]
+  # Default mode
+  defaultMode = "dark"
+
+  # Dark mode colors
+  [params.theme.dark]
+    primary = "#FFD700"    # Gold
+    secondary = "#C5A572"  # Secondary gold
+    background = "#000000" # Black
+    text = "#FFFFFF"       # White text
+    accent = "#FFD700"     # Accent color
 
 [menu]
   [[menu.main]]
